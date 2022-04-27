@@ -1,3 +1,3 @@
-const Player = require('..lib/player.js')
+//const Player = require('..lib/player.js');
 
-test();
+//test();

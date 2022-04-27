@@ -1,3 +1,3 @@
-const Game = require('../lib/game.js');
+//const Game = require('../lib/game.js');
 
-test();
+//test();
