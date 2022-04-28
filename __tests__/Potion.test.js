@@ -1,4 +1,4 @@
-const Potion = require('../lib/potion.js');
+const Potion = require('../lib/potion');
 const { default: TestRunner } = require('jest-runner');
 
 test('creates a health potion object', () => {

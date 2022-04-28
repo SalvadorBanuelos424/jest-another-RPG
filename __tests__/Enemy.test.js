@@ -1,3 +1,3 @@
-//const Enemy = require('..lib/enemy.js');
+//const Enemy = require('..lib/enemy');
 
 //test();
