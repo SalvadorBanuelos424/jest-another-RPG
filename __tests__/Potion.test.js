@@ -1,6 +1,4 @@
 const Potion = require('../lib/potion');
-const { default: TestRunner } = require('jest-runner');
-const Player = require('../lib/Player');
 
 test('creates a health potion object', () => {
     const potion = new Potion('health');
@@ -15,14 +13,4 @@ test('creates a random potion object', () => {
     expect(potion.name).toEqual(expect.any(String));
     expect(potion.name.length).toBeGreaterThan(0);
     expect(potion.value).toEqual(expect.any(Number));
-});
-
-test('uses a potion from inventory', () => {
-  const player = new Player('Dave');
-  player.inventory = [new Potion(), new Potion(), new Potion()];
-  const oldCount = player.inventory.length;
-
-  player.usePotion(1);
-
-  expect(player.inventory.length).toBeLessThan(oldCount);
 });
